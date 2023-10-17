@@ -214,7 +214,7 @@ main {
     #Perfil h1, p {
         color: #333;
         font-family: 'Inconsolata', monospace;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         text-align: center;
     }
     
@@ -227,10 +227,10 @@ main {
         width: 75%;
     }
 
-    #PerfilDesciption {
+    #PerfilDescription p{
         color: #333;
         font-family: 'Inconsolata', monospace;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         text-align: center;
     }
 
