@@ -134,11 +134,11 @@ main {
     display: flex;
     justify-content:space-around;
     min-height: 400px;
-    height: 700px;
+    height: 730px;
     background-image: url(/images/fondoPerfil.jpg);
     background-size: cover;
     background-position: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border: 2px solid #fff;
     border-radius: 10px;
     margin-top: 15px;
@@ -151,7 +151,8 @@ main {
 	padding: auto;
 	padding-top: 30px;
     background-color: #ffffff;
-    width: 650px;
+    width: 620px;
+    height: 630px;
     margin-top: 50px;
     border-radius: 30px;
     margin-right: 5px;
@@ -193,6 +194,7 @@ main {
 	padding-top: 30px;
     background-color: #ffffff;
     width: 650px;
+    height: 630px;
     margin-top: 50px;
     border-radius: 30px;
     margin-right: 10px;
