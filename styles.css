@@ -30,7 +30,9 @@ html {
 }
 
 #navbar {
+    position: relative;
     background-color: #fff;
+    z-index: 2;
 }
 
 #navigation {
@@ -148,7 +150,8 @@ main {
 #Perfil h1, p {
     color: #333;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 #PerfilDescription {
@@ -157,12 +160,19 @@ main {
 	align-items: center;
 	padding: auto;
 	padding-top: 30px;
-    background-color: red;
+    background-color: #ffffff;
     width: 600px;
     margin-top: 20px;
-    border-radius: 15px;
-    background-color: #696464;
-    margin-left: 5px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+
+#PerfilDescription p {
+    color: #333;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 .iniciar-animacion {
@@ -178,5 +188,50 @@ main {
 } @keyframes tracking-in-expand-forward-bottom{0%{letter-spacing:-.2em;transform:translateZ(-700px) translateY(100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
 
 .blur-in-expand{
-    animation:blur-in-expand 0.5s linear both
+    animation:blur-in-expand 0.7s linear both
 } @keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+
+@media screen and (max-width: 748px) {
+    #PerfilSection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        max-height: 800px;
+        align-items: center;
+        z-index: 1;
+
+    }
+
+    #Perfil {
+        display: flex;
+        align-items: center;
+        padding: 2%;
+        height: 500px;
+        width: 75%;
+    }
+    
+    #Perfil h1, p {
+        color: #333;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    
+    #PerfilDescription {
+        display: flex;
+        align-items: center;
+        width: auto;
+        padding: 2%;
+        height: 300px;
+        width: 75%;
+    }
+
+    #PerfilDesciption {
+        color: #333;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+}
