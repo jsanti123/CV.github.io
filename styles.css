@@ -191,6 +191,14 @@ main {
     animation:blur-in-expand 0.7s linear both
 } @keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
 
+@media screen and (max-width: 404px) {
+    #navigation a img {
+        display: inline-block;
+        padding: 25px 1em;
+        width: 250px;
+    }
+}
+
 
 @media screen and (max-width: 748px) {
     #PerfilSection{
