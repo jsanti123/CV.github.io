@@ -91,6 +91,7 @@ html {
     transition-delay: 0.1s;
 }
 
+
 main {
     color: #fff;
 }
@@ -132,7 +133,15 @@ main {
 #PerfilSection{
     display: flex;
     justify-content:space-around;
-    min-height: 500px;
+    min-height: 400px;
+    height: 700px;
+    background-image: url(/images/fondoPerfil.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 #Perfil {
@@ -142,10 +151,11 @@ main {
 	padding: auto;
 	padding-top: 30px;
     background-color: #ffffff;
-    width: 600px;
-    margin-top: 20px;
+    width: 650px;
+    margin-top: 50px;
     border-radius: 30px;
     margin-right: 5px;
+    margin-left: 10px;
 }
 
 #Perfil h1, p {
@@ -155,9 +165,25 @@ main {
     text-align: center;
 }
 
-#ImagenMia {
-    width: 2%;
+.ImagenMia {
+    width: 68%;
+    margin: 20px;
+    height: 80%;
+    border: 3px solid #333;
+    border-radius: 100%;
+
 }
+
+@media  screen and (max-width: 1236px) {
+    .ImagenMia {
+        width: 70%;
+        margin: 50px;
+        height: 70%;
+        border: 3px solid #333;
+        border-radius: 100%;
+    }
+}
+  
 
 #PerfilDescription {
     display: flex;
@@ -166,10 +192,11 @@ main {
 	padding: auto;
 	padding-top: 30px;
     background-color: #ffffff;
-    width: 600px;
-    margin-top: 20px;
+    width: 650px;
+    margin-top: 50px;
     border-radius: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
 }
 
 
@@ -209,10 +236,21 @@ main {
         margin: 5px 0;
         border-radius: 10px;
     }
+
+    
 }
 
 
 @media screen and (max-width: 748px) {
+    .ImagenMia {
+        width: 60%;
+        margin: 40px;
+        height: 70%;
+        border: 3px solid #333;
+        border-radius: 100%;
+    
+    }
+
     #PerfilSection{
         display: flex;
         width: 100%;
@@ -220,8 +258,7 @@ main {
         max-height: 800px;
         align-items: center;
         justify-content: center;
-        z-index: 1;
-
+        
     }
 
     #Perfil {
