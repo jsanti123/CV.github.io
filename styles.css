@@ -25,7 +25,7 @@ html {
 
 .container {
     width: 90%;
-    max-width: 1700px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@ html {
     position: relative;
     background-color: #fff;
     z-index: 2;
+    align-items: center;
 }
 
 #navigation {
@@ -152,6 +153,10 @@ main {
     font-family: 'Inconsolata', monospace;
     font-size: 1.7rem;
     text-align: center;
+}
+
+#ImagenMia {
+    width: 2%;
 }
 
 #PerfilDescription {
