@@ -195,6 +195,21 @@ main {
         border-radius: 100%;
     }
 }
+
+
+#PerfilDescription p {
+    color: #333;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.7rem;
+    text-align: justify;
+    padding: 25px;
+}
+
+@media screen and (max-width: 1053px) {
+    #PerfilDescription p {
+        font-size: 1.4rem;
+    }
+}
   
 
 #PerfilDescription {
@@ -214,14 +229,6 @@ main {
 }
 
 
-#PerfilDescription p {
-    color: #333;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.7rem;
-    text-align: justify;
-    padding: 25px;
-}
-
 .iniciar-animacion {
     animation-play-state: running;
   }
@@ -238,7 +245,7 @@ main {
     animation:blur-in-expand 0.4s linear both
 } @keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
 
-@media screen and (max-width: 404px) {
+@media screen and (max-width: 405px) {
     #navigation a img {
         display: inline-block;
         padding: 25px 1em;
@@ -252,11 +259,15 @@ main {
         border-radius: 10px;
     }
 
+    #PerfilSection{
+        width: 100%;
+        height: 1600px;
+    }
     
 }
 
-
 @media screen and (max-width: 748px) {
+
     .ImagenMia {
         width: 60%;
         margin: 40px;
@@ -269,7 +280,8 @@ main {
     #PerfilSection{
         display: flex;
         width: 100%;
-        height: 1200px;
+        height: auto;
+        padding-bottom: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
