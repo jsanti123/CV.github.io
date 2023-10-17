@@ -106,7 +106,6 @@ main {
         left: 5%;
         width: auto;
         background-color: #fff;
-        align-items: center;
     }
 
     #main-nav li a {
@@ -220,6 +219,7 @@ main {
         flex-direction: column;
         max-height: 800px;
         align-items: center;
+        justify-content: center;
         z-index: 1;
 
     }
