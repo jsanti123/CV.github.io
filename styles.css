@@ -24,7 +24,7 @@ html {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: auto;
     margin: 0 auto;
 }
@@ -330,6 +330,15 @@ main {
         font-family: 'Inconsolata', monospace;
         font-size: 1.3rem;
         text-align: justify;
+    }
+
+    .ImagenMia {
+        width: 69%;
+        margin: 40px;
+        height: 71%;
+        border: 3px solid #333;
+        border-radius: 100%;
+        
     }
 
 }
