@@ -135,7 +135,7 @@ main {
     justify-content:space-around;
     min-height: 400px;
     height: 730px;
-    background-image: url(/images/fondoPerfil.jpg);
+    background-image: url(images/fondoPerfil.jpg);
     background-size: cover;
     background-position: center;
     padding-bottom: 20px;
