@@ -157,6 +157,7 @@ main {
     border-radius: 30px;
     margin-right: 5px;
     margin-left: 10px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.87); 
 }
 
 #Perfil h1, p {
@@ -179,7 +180,17 @@ main {
     .ImagenMia {
         width: 70%;
         margin: 50px;
-        height: 70%;
+        height: 65%;
+        border: 3px solid #333;
+        border-radius: 100%;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+    .ImagenMia {
+        width: 70%;
+        margin: 50px;
+        height: 55%;
         border: 3px solid #333;
         border-radius: 100%;
     }
@@ -199,6 +210,7 @@ main {
     border-radius: 30px;
     margin-right: 10px;
     margin-left: 5px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.87);
 }
 
 
@@ -206,7 +218,8 @@ main {
     color: #333;
     font-family: 'Inconsolata', monospace;
     font-size: 1.7rem;
-    text-align: center;
+    text-align: justify;
+    padding: 25px;
 }
 
 .iniciar-animacion {
@@ -214,15 +227,15 @@ main {
   }
 
 .tracking-in-expand{
-    animation:tracking-in-expand 1.4s linear both
+    animation:tracking-in-expand 1.3s linear both
 } @keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
 .tracking-in-expand-forward-bottom{
-    animation:tracking-in-expand-forward-bottom 1.1s linear both
+    animation:tracking-in-expand-forward-bottom 1s linear both
 } @keyframes tracking-in-expand-forward-bottom{0%{letter-spacing:-.2em;transform:translateZ(-700px) translateY(100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
 
 .blur-in-expand{
-    animation:blur-in-expand 0.7s linear both
+    animation:blur-in-expand 0.4s linear both
 } @keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
 
 @media screen and (max-width: 404px) {
@@ -256,8 +269,8 @@ main {
     #PerfilSection{
         display: flex;
         width: 100%;
+        height: 1200px;
         flex-direction: column;
-        max-height: 800px;
         align-items: center;
         justify-content: center;
         
@@ -283,7 +296,7 @@ main {
         align-items: center;
         width: auto;
         padding: 2%;
-        height: 300px;
+        height: auto;
         width: 75%;
     }
 
@@ -291,7 +304,7 @@ main {
         color: #333;
         font-family: 'Inconsolata', monospace;
         font-size: 1.3rem;
-        text-align: center;
+        text-align: justify;
     }
 
 }
