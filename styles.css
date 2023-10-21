@@ -1,146 +1,211 @@
-html, body {
-    height: 100%;
-    background-color: #333;
-}
-  
-body {
-    font-family: 'OPen Sans', sans-serif;
-    font-size: 1.09rem;
-    overflow-x: hidden;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-* {
+*{
     margin: 0;
     padding: 0;
-}
+    color: #f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+ }
+ body{
+    overflow-x: hidden;
+    background-image: url(images/fondoPerfil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
-.container {
-    width: 90%;
-    max-width: auto;
-    margin: 0 auto;
-    align-items: center;
-}
-
-#navbar {
-    position: relative;
-    background-color: #fff;
-    z-index: 2;
-    align-items: center;
-}
-
-#navigation {
+ }
+ nav{
+    height: 4.5rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content: space-between;
-}
-
-#main-nav {
+    position: fixed;
+    z-index: 10;
+ }
+ 
+ /*Styling logo*/
+ .logo{
+    padding:1vh 1vw;
+    text-align: center;
+    min-width: 275px;
+ }
+ .logo img {
+    height: 5rem;
+    width: 5rem;
+ }
+ 
+ /*Styling Links*/
+ .nav-links{
     display: flex;
-    list-style: none;
-}
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .nav-links li a{
+   text-decoration: none;
+   margin: 0 0.7vw;
+ }
+ .nav-links li a:hover {
+   color: #61DAFB;
+ }
+ .nav-links li {
+   position: relative;
+   
+ }
+ .nav-links li a:hover::before{
+    width: 80%;
+ }
 
-#main-nav li a {
-    color: #333;
-    text-decoration: none;
-    padding: 33px 1.5em;
-    display: inline-block;
-}
 
-#navigation a img {
-    display: inline-block;
-    padding: 16px 1em;
-    width: 300px;
-}
-
-#main-nav li a:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-.menu-toggle {
+ /*Styling Hamburger Icon*/
+ .hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+ }
+ .hamburger{
     display: none;
-    flex-direction: column;
-    border: none;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 20px;
-}
-
-.menu-toggle .bar {
-    width: 60px;
-    height: 7px;
-    background-color: #333;
-    margin: 5px 0;
-    border-radius: 10px;
-}
-
-.menu-toggle:hover{
-    background-color: #333;
-    transition-delay: 0.1s;
-}
-
-.menu-toggle:hover .bar {
-    background-color: #fff;
-    transition-delay: 0.1s;
-}
-
-
-main {
-    color: #fff;
-}
-
-
-@media screen and (max-width: 1328px) {
-
-    #main-nav {
-        display: none;
-        flex-direction: column;
+ }
+ 
+ /*Stying for small screens*/
+ @media screen and (max-width: 926px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
         position: absolute;
-        top: 91px;
-        left: 5%;
-        width: auto;
-        background-color: #fff;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
     }
-
-    #main-nav li a {
-        padding: 12px 1.5em;
+    .nav-links{
+        position: fixed;
+        background: #131418;
+        height: 100vh;
         width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
     }
-
-
-    #main-nav.active {
-        display: flex;
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
     }
-    
-    .menu-toggle {
-        display: flex;
+    .nav-links li{
+        opacity: 0;
     }
-
-    #navbar {
-        background-color: #fff;
-        min-width: 420px;
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
     }
-    
-}
-
-@media screen and (max-width: 500px) {
-    html, body {
-        width: 100%;
-        height: 100%;
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
         margin: 0;
-        padding: 0;
-        overflow-x: hidden;
     }
-}
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+ }
+ /*Animating Hamburger Icon on Click*/
+ .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+ }
+ .toggle .line2{
+    opacity: 0;
+ }
+ .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+ }
+
+ .ContainerProfile {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+ }
+
+ .grid {
+   width: 90%;
+   height: 400px;
+   padding-top: 100px;
+   display: grid;
+   grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+   );
+   gap: 32px;
+ }
+
+ .grid * {
+   margin-top: 20px;
+ }
+
+ .grid .imageprofile {
+   display: flex;
+   border-radius: 8px;
+   width: 100%;
+   height: auto;
+   justify-content: center;
+ }
+
+ .fotoperfil {
+   width: 85%;
+   max-width: 370px;
+   height: auto;
+   max-height: 430px;
+   border-radius: 100px;
+   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+ }
+ 
+
+ .textprofile{
+   padding: 10px;
+   background-color: rgba(18, 26, 26, 0.726);
+   display: block;
+   justify-content: center;
+   border-radius: 12px;
+ }
+
+ .textprofile h1 {
+   color: white;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+ }
+
+ .textprofile p {
+   color: rgb(167, 167, 12);
+   text-align: justify;
+   font-size: 20px;
+   font-weight: 300;
+ }
 

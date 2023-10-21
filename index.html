@@ -1,85 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
     <title>CV Santiago Posada</title>
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <div id="navigation" class="container">
-                <button class="menu-toggle" id="menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </button>
-                <a href="index.html"><img src="images/logo.png" alt="Logotipo"></a>
-                <ul id="main-nav">
-                    <li><a href="#PerfilSection">Perfil</a></li>
-                    <li><a href="#HabilidadesSection">Habilidades</a></li>
-                    <li><a href="index.html">Estudio</a></li>
-                    <li><a href="index.html">Lenguajes de Programacion</a></li>
-                    <li><a href="index.html">Experiencias</a></li>
-                    <li><a href="index.html">Portafolio</a></li>
-                </ul>
+        <nav>
+            <div class="logo" style="display: flex; align-items: center;">
+                <span style="color: white; font-size: 26px; font-weight: bold; letter-spacing: 1px; margin-left: 20px;">Santiago Posada F.</span>
             </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Programming Languages</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
+        <script src="script.js"></script>
     </header>
-    <main>
-        <section>
-            <article>
-                <div id="PerfilSection" class="container">
-                    <div id="Perfil" class="blur-in-expand">
-                        <h1 class="tracking-in-expand-forward-bottom">Santiago Posada Florez</h1>
-                        <p class="tracking-in-expand">Estudiante de Ingenieria de sistemas</p>
-                        <img src="images/fotoCV.jpg" alt="ImagenMia" class="ImagenMia">
-                    </div>
-                    <div id="PerfilDescription" class="blur-in-expand">
-                        <p class="tracking-in-expand">¡Hola! Soy un estudiante de noveno semestre de la carrera de <b>Ingeniería de Sistemas</b> en la <b>Universidad Tecnológica de Pereira (UTP)</b>. Durante mi tiempo en la universidad, he adquirido una sólida formación en áreas como la <b>programación</b> y el <b>desarrollo de software</b>. Me encuentro plenamente comprometido en mi búsqueda constante de aprendizaje y desarrollo en el campo de la ingeniería de sistemas. Estoy firmemente convencido de que el aprendizaje continuo es un pilar fundamental en un entorno tan dinámico y en constante evolución como el nuestro. </p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div id="HabilidadesSection" class="container">
-                    <h1>Habilidades</h1>
-                    <div>
-                        <h2>Tecnicas</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam optio rem deleniti ipsa dolorem. Quo, ratione debitis eius praesentium alias enim harum sapiente.Consectetur ex ad quae dolorem. Pariatur, vel!</p>
-                        <h2>Blandas</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolor cum culpa assumenda ut? Iusto delectus maiores debitis commodi quod fugiat optio, odio tempora vel assumenda cum necessitatibus incidunt repudiandae.</p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div id="EstudioSection" class="container">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi voluptatem laudantium maxime vel! Impedit aliquid ex adipisci, recusandae incidunt tempore aperiam at quasi expedita repellendus reprehenderit! Unde, officiis mollitia!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut repellat quos debitis provident accusamus velit possimus, hic eum esse veritatis quo corrupti eos voluptatem voluptate autem nihil illum atque!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci commodi consectetur asperiores recusandae ad, quisquam amet accusantium dolores quas eos deserunt dolor. Voluptatem ullam dolorem, iure quo error rerum expedita.
-                </div>
-            </article>
-            <article>
-                <div id="LenguajesSection" class="container">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi voluptatem laudantium maxime vel! Impedit aliquid ex adipisci, recusandae incidunt tempore aperiam at quasi expedita repellendus reprehenderit! Unde, officiis mollitia!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut repellat quos debitis provident accusamus velit possimus, hic eum esse veritatis quo corrupti eos voluptatem voluptate autem nihil illum atque!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci commodi consectetur asperiores recusandae ad, quisquam amet accusantium dolores quas eos deserunt dolor. Voluptatem ullam dolorem, iure quo error rerum expedita.
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div id="PieDePagina" class="container">
-            <h1>CONTACTO</h1>
-            <p>© 2023 Santiago Posada Florez</p>
-            <p>Pereira, Colombia</p>
-        </div>    
-    </footer>
+    <section class="ContainerProfile">
+        <div class="grid">
+            <div class="imageprofile">
+                <img class="fotoperfil" src="images/fotoCV.jpg">
+            </div>
+            <div class="textprofile">
+                <h1>Profile</h1>
+                <p>¡¡Hello! I am a student of the ninth semester of <b>Systems Engineering</b> at the <b>Technological University of Pereira (UTP)</b>. During my time at university, I have gained solid experience in areas such as <b>programming</b> and <b>software development</b>. I am fully committed to my ongoing quest for learning and development in the field of systems engineering. I am firmly convinced that continuous learning is a fundamental pillar in an environment as dynamic and constantly evolving as ours. </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+
