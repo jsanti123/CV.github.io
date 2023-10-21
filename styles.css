@@ -179,6 +179,7 @@
  .fotoperfil {
    width: 85%;
    max-width: 370px;
+   min-width: 300px;
    height: auto;
    max-height: 430px;
    border-radius: 100px;
@@ -203,7 +204,7 @@
  }
 
  .textprofile p {
-   color: rgb(167, 167, 12);
+   color: rgb(187, 187, 10);
    text-align: justify;
    font-size: 20px;
    font-weight: 300;
