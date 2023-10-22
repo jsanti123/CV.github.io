@@ -198,6 +198,8 @@
  }
 
  .textprofile h1 {
+   font-family: 'Changa', sans-serif;
+   font-family: 'Galada', cursive;
    color: white;
    text-align: center;
    font-size: 40px;
@@ -217,3 +219,83 @@
    font-family: 'Galada', cursive;
    font-size: 30px;
 }
+
+.ContainerEducation {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+}
+
+.TituloEducation {
+   margin-top: 100px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   font-family: 'Changa', sans-serif;
+   font-family: 'Galada', cursive;
+   font-size: 70px;
+   background-color: rgba(18, 26, 26, 0.726);
+
+}
+
+.grid .ImagenEducation1 {
+   display: flex;
+   border-radius: 8px;
+   width: 100%;
+   height: auto;
+   justify-content: center;
+ }
+
+ .ImagenUTP {
+   width: 85%;
+   max-width: 330px;
+   min-width: 300px;
+   height: auto;
+   max-height: 430px;
+
+ }
+
+ .Container {
+   background-color: rgba(111, 116, 116, 0.726);
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding-bottom: 100px;
+ }
+
+ .DescriptionEducation1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .DescriptionEducation1 h2 {
+   font-family: sans-serif;
+   color: white;
+   text-align: center;
+   font-size: 35px;
+   font-weight: 600;
+ }
+
+ .DescriptionEducation1 h3 {
+   font-family: sans-serif;
+   color: white;
+   text-align: center;
+   font-size: 25px;
+   font-weight: 400;
+ }
+
+ .DescriptionEducation1 p {
+   font-family: sans-serif;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 400;
+ }
+
+.linea-horizontal {
+   border-bottom: 0px solid rgba(0, 0, 0, 0); /* Color y transparencia */
+   margin: 10px 0; /* Margen superior e inferior para ajustar la distancia */
+}
+
