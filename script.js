@@ -13,4 +13,15 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
+links.forEach(link => {
+    link.addEventListener('click', ()=>{
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+        hamburger.classList.toggle("toggle");
+    });
+});
+
+
 

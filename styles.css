@@ -105,6 +105,7 @@
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
     }
+
     .nav-links li{
         opacity: 0;
     }
@@ -154,7 +155,7 @@
 
  .grid {
    width: 90%;
-   height: 400px;
+   height: auto;
    padding-top: 100px;
    display: grid;
    grid-template-columns: repeat(
@@ -188,19 +189,19 @@
  
 
  .textprofile{
-   padding: 10px;
    background-color: rgba(18, 26, 26, 0.726);
-   display: block;
-   justify-content: center;
    border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
  }
 
  .textprofile h1 {
    color: white;
    text-align: center;
-   font-size: 30px;
+   font-size: 40px;
    font-weight: 600;
-   margin-bottom: 20px;
  }
 
  .textprofile p {
@@ -210,3 +211,8 @@
    font-weight: 300;
  }
 
+.letralogo {
+   font-family: 'Changa', sans-serif;
+   font-family: 'Galada', cursive;
+   font-size: 30px;
+}
