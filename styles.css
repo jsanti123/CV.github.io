@@ -312,4 +312,14 @@ html, body {
 
  }
 
-
+ .TituloProgramming {
+   margin-top: 100px;
+   width: 100%;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   font-family: 'Changa', sans-serif;
+   font-family: 'Galada', cursive;
+   font-size: 60px;
+   background-color: rgba(18, 26, 26, 0.726);
+ }
