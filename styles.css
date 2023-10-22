@@ -299,3 +299,14 @@
    margin: 10px 0; /* Margen superior e inferior para ajustar la distancia */
 }
 
+.ImagenUdemy {
+   width: 90%;
+   max-width: 320px;
+   min-width: 390px;
+   height: auto;
+   max-height: 430px;
+   padding-left: 20px;
+   padding-right: 20px;
+
+ }
+
