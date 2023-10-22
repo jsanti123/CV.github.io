@@ -39,6 +39,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const carousel = document.querySelector(".carousel");
+const wrapper = document.querySelector(".wrapper");
+const arrowIcons = document.querySelectorAll(".wrapper i");
+let firstImage = document.getElementById('miImagen');
+let firstImgWidth = 0;
+function updateImageWidth() {
+    firstImgWidth = firstImage.clientWidth;
+}
 
 
+window.addEventListener('resize', updateImageWidth);
+let isDragStart = false, prevPageX, prevScrollLeft;
 
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+    });
+});
+
+const dragstart = (e) => {
+    e.preventDefault();
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    if (!isDragStart) return;
+    e.preventDefault();
+    carousel.classList.add("dragging");
+    let positionDiff = e.pageX - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+}
+
+const dragstop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+}
+carousel.addEventListener("mousedown", dragstart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragstop);
+wrapper.addEventListener("mouseleave", dragstop);

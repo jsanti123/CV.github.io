@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Galada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <title>CV Santiago Posada</title>
 </head>
 <body>
@@ -24,12 +25,11 @@
             <ul class="nav-links">
                 <li><a href="#Profile">Profile</a></li>
                 <li><a href="#Education">Education</a></li>
-                <li><a href="#">Programming Languages</a></li>
+                <li><a href="#Programming">Programming Languages</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <script src="script.js"></script>
     </header>
     <section id="Profile" class="ContainerProfile">
         <div  class="grid">
@@ -99,8 +99,25 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="Programming" class="ContainerProgramming">
         <h1 class="TituloProgramming">Programming Languages</h1>
+        <div class="linea-horizontal"></div>
+        <div class="ContainerCarousel">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img id="miImagen" src="images/python.png" alt="">
+                    <img src="images/csharp.png" alt="">
+                    <img src="images/php.png" alt="">
+                    <img src="images/js.png" alt="">
+                    <img src="images/html.png" alt="">
+                    <img src="images/css.png" alt="">
+                    <img src="images/sql.png" alt="">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </section>
 </body>
 </html>
