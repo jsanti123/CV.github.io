@@ -312,6 +312,14 @@ html, body {
 
  }
 
+.ContainerProgramming {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+ }
+
  .TituloProgramming {
    margin-top: 100px;
    width: 100%;
@@ -324,79 +332,28 @@ html, body {
    background-color: rgba(18, 26, 26, 0.726);
  }
 
-.ContainerProgramming {
-   width: 100%;
+ .grid .containerLenguaje {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .grid .containerLenguaje .lenguaje {
+   display: flex;
+   justify-content: center;
+ }
+
+ .grid .containerLenguaje .lenguaje img {
+   width: 17%;
    height: auto;
  }
-
- .ContainerCarousel {
-   display: flex;
-   padding: 0 35px;
-   align-items: center;
-   justify-content: center;
-   min-height: 60vh;
+ .ImagenProgramming {
+   width: 70%;
+   border-radius: 20%;
+   max-width: 220px;
+   min-width: 290px;
+   height: auto;
+   max-height: 430px;
+   padding-left: 20px;
+   padding-right: 20px;
  }
-
- .wrapper {
-   max-width: 1200px;
-   position: relative;
- }
-
- .wrapper i {
-   top: 50%;
-   height: 46px;
-   width: 46px;
-   font-size: 1.2rem;
-   position: absolute;
-   cursor: pointer;
-   background: rgba(18, 26, 26, 0.726);
-   line-height: 46px;
-   text-align: center;
-   border-radius: 50%;
-   transform: translateY(-50%);
- }
-
- .wrapper i:first-child {
-   left: -23px;
- }
-
- .wrapper i:last-child {
-   right: -23px;
- }
-
-.wrapper .carousel {
-   cursor: pointer;
-   font-size: 0px;
-   cursor: pointer;
-   white-space: nowrap;
-   overflow: hidden;
-   scroll-behavior: smooth;
-}
-
-.carousel {
-   cursor: grab;
-   scroll-behavior: auto;
-}
-
-.carousel img {
-   pointer-events: none;
-}
-.carousel img{
-   height: 300px;
-   object-fit: contain;
-   width: calc(100%/3);
-}
-
-@media screen and (max-width: 900px) {
-   .carousel img{
-      width: calc(100%/2);
-   }
-   
-}
-
-@media screen and (max-width: 500px) {
-   .carousel img{
-      width: calc(100%/1);
-   }
-   
-}
