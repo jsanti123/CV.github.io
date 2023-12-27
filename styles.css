@@ -332,28 +332,114 @@ html, body {
    background-color: rgba(18, 26, 26, 0.726);
  }
 
- .grid .containerLenguaje {
+ .grid2 {
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(
+     auto-fit,
+     minmax(300px, 1fr)
+  );
+  gap: 32px;
+}
+
+.grid2 * {
+  margin-top: 20px;
+}
+
+ .grid2 .containerLenguaje {
    display: flex;
    flex-direction: column;
    align-items: center;
  }
 
- .grid .containerLenguaje .lenguaje {
+ .grid2 .containerLenguaje .lenguaje {
    display: flex;
    justify-content: center;
  }
 
- .grid .containerLenguaje .lenguaje img {
+ .grid2 .containerLenguaje .lenguaje img {
    width: 17%;
    height: auto;
  }
  .ImagenProgramming {
-   width: 70%;
+   width: 60%;
    border-radius: 20%;
-   max-width: 220px;
-   min-width: 290px;
+   max-width: 290px;
+   min-width: 220px;
    height: auto;
    max-height: 430px;
    padding-left: 20px;
    padding-right: 20px;
  }
+
+ .tituloPortfolio {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Changa', sans-serif;
+  font-family: 'Galada', cursive;
+  font-size: 4rem;
+  background-color: rgba(18, 26, 26, 0.726);
+}
+
+.containerFooter {
+  margin-top: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #131418
+}
+
+.gridFooter {
+  padding-top: 30px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(
+     auto-fit,
+     minmax(300px, 1fr)
+  );
+  gap: 32px;
+}
+
+.gridFooter .information {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridFooter h1 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.footerInformation {
+  list-style: none;
+  padding-left: 36px;
+}
+
+.footerInformation li {
+  margin-bottom: 10px;
+}
+
+.ContainerRedes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #131418;
+}
+
+.ContainerRedes a i {
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+}
