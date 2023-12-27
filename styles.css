@@ -443,3 +443,9 @@ html, body {
   font-size: 30px;
   color: white;
 }
+
+.ContainerCV a i {
+  margin: 10px;
+  font-size: 70px;
+  color: white;
+}
